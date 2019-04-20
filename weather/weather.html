@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+        <title>Weather</title>
+        <script src="weather.js"></script>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384- GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="weather.css">
+    </head>
+    <body onload="initialize()" class="col-md-12">
+        <div class="container-fluid first">
+            <div class="row"> 
+                <div id="weather_info">
+                    <div class="header">YOUR WEATHER UPDATE</div>
+                    <div class="text-holder">
+                        <input type="text" placeholder="Enter City Name" id="city" class="form-control" autocomplete="on">
+                    </div>
+                    <div class="btn-holder">
+                        <button class="btn btn-primary" id="submit">Get Weather Data</button>
+                        <div>
+                            <div class="custom-control custom-switch" id="switch">
+                                <input type="checkbox" class="custom-control-input" id="daily_hourly" checked>
+                                <label class="custom-control-label" for="daily_hourly">Toggle daily/hourly forecast</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="option">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
